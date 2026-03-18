@@ -1,0 +1,27 @@
+project:
+  name: "Olist 360"
+  version: "1.0.0"
+
+paths:
+  raw_data: "data/raw"
+  processed_data: "data/processed"
+  warehouse: "data/warehouse/olist.duckdb"
+  models: "src/ml/saved_models"
+  reports: "reports"
+  figures: "reports/figures"
+
+data:
+  tables:
+    - olist_orders_dataset
+    - olist_order_items_dataset
+    - olist_customers_dataset
+    - olist_sellers_dataset
+    - olist_products_dataset
+    - olist_order_payments_dataset
+    - olist_order_reviews_dataset
+    - olist_geolocation_dataset
+    - product_category_name_translation
+
+ml:
+  random_state: 42
+  test_size: 0.2
