@@ -1,0 +1,15 @@
+# Never upload raw data
+data/raw/
+data/warehouse/
+
+# Never upload virtual environment
+venv/
+
+# Python junk files
+__pycache__/
+*.py[cod]
+
+# Editor files
+.env
+.ipynb_checkpoints/
+.DS_Store

@@ -1,0 +1,992 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_3b103810aca04eb638f81e268acca365 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_3b103810aca04eb638f81e268acca365" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_3b103810aca04eb638f81e268acca365 = L.map(
+                "map_3b103810aca04eb638f81e268acca365",
+                {
+                    center: [-14.235, -51.925],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 4,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_aa775c25c92dc163034a1e31896c4550 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_aa775c25c92dc163034a1e31896c4550.addTo(map_3b103810aca04eb638f81e268acca365);
+        
+    
+            var circle_marker_63ac6f7a60b69bd8ee9645de794922cc = L.circleMarker(
+                [-23.548, -46.636],
+                {"bubblingMouseEvents": true, "color": "#C44E52", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4C72B0", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20.873, "stroke": true, "weight": 3}
+            ).addTo(map_3b103810aca04eb638f81e268acca365);
+        
+    
+        var popup_b0f9a45c92cdec149cccdd361be454ba = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_4c98d55fdc8a2a4f45bf38ec661fcf5f = $(`<div id="html_4c98d55fdc8a2a4f45bf38ec661fcf5f" style="width: 100.0%; height: 100.0%;">             <b>SP</b><br>             Orders: 41,746<br>             Revenue: R$5,202,955.05<br>             Late Rate: 5.72%             </div>`)[0];
+                popup_b0f9a45c92cdec149cccdd361be454ba.setContent(html_4c98d55fdc8a2a4f45bf38ec661fcf5f);
+            
+        
+
+        circle_marker_63ac6f7a60b69bd8ee9645de794922cc.bindPopup(popup_b0f9a45c92cdec149cccdd361be454ba)
+        ;
+
+        
+    
+    
+            circle_marker_63ac6f7a60b69bd8ee9645de794922cc.bindTooltip(
+                `<div>
+                     SP — 41,746 orders
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4ce61872118d2e1b375d6a8d139f6e10 = L.circleMarker(
+                [-22.912, -43.172],
+                {"bubblingMouseEvents": true, "color": "#C44E52", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4C72B0", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.426, "stroke": true, "weight": 3}
+            ).addTo(map_3b103810aca04eb638f81e268acca365);
+        
+    
+        var popup_d3f7e14b22c4d2abe2efa1b2d896cf37 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_20d5147480819de3ab87128a240b654a = $(`<div id="html_20d5147480819de3ab87128a240b654a" style="width: 100.0%; height: 100.0%;">             <b>RJ</b><br>             Orders: 12,852<br>             Revenue: R$1,824,092.67<br>             Late Rate: 12.95%             </div>`)[0];
+                popup_d3f7e14b22c4d2abe2efa1b2d896cf37.setContent(html_20d5147480819de3ab87128a240b654a);
+            
+        
+
+        circle_marker_4ce61872118d2e1b375d6a8d139f6e10.bindPopup(popup_d3f7e14b22c4d2abe2efa1b2d896cf37)
+        ;
+
+        
+    
+    
+            circle_marker_4ce61872118d2e1b375d6a8d139f6e10.bindTooltip(
+                `<div>
+                     RJ — 12,852 orders
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a04591f35d6b8bf811327c9d26dbf57d = L.circleMarker(
+                [-18.512, -44.555],
+                {"bubblingMouseEvents": true, "color": "#C44E52", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4C72B0", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.8175, "stroke": true, "weight": 3}
+            ).addTo(map_3b103810aca04eb638f81e268acca365);
+        
+    
+        var popup_ed86beae00d5c6e0aedfc3bec68719ad = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_b874012de2bc1f539b1b6d118dab5e03 = $(`<div id="html_b874012de2bc1f539b1b6d118dab5e03" style="width: 100.0%; height: 100.0%;">             <b>MG</b><br>             Orders: 11,635<br>             Revenue: R$1,585,308.03<br>             Late Rate: 5.48%             </div>`)[0];
+                popup_ed86beae00d5c6e0aedfc3bec68719ad.setContent(html_b874012de2bc1f539b1b6d118dab5e03);
+            
+        
+
+        circle_marker_a04591f35d6b8bf811327c9d26dbf57d.bindPopup(popup_ed86beae00d5c6e0aedfc3bec68719ad)
+        ;
+
+        
+    
+    
+            circle_marker_a04591f35d6b8bf811327c9d26dbf57d.bindTooltip(
+                `<div>
+                     MG — 11,635 orders
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a5c9f04b8db88f876f199d22e08bd4d5 = L.circleMarker(
+                [-30.034, -51.217],
+                {"bubblingMouseEvents": true, "color": "#C44E52", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4C72B0", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.733, "stroke": true, "weight": 3}
+            ).addTo(map_3b103810aca04eb638f81e268acca365);
+        
+    
+        var popup_a055d46788f378d23fa2d07b9b4ac449 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_b4a97f605d4c70c924618c83036af1f5 = $(`<div id="html_b4a97f605d4c70c924618c83036af1f5" style="width: 100.0%; height: 100.0%;">             <b>RS</b><br>             Orders: 5,466<br>             Revenue: R$750,304.02<br>             Late Rate: 6.99%             </div>`)[0];
+                popup_a055d46788f378d23fa2d07b9b4ac449.setContent(html_b4a97f605d4c70c924618c83036af1f5);
+            
+        
+
+        circle_marker_a5c9f04b8db88f876f199d22e08bd4d5.bindPopup(popup_a055d46788f378d23fa2d07b9b4ac449)
+        ;
+
+        
+    
+    
+            circle_marker_a5c9f04b8db88f876f199d22e08bd4d5.bindTooltip(
+                `<div>
+                     RS — 5,466 orders
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3459578ed5ebb0c610f82b1a0b4ae89f = L.circleMarker(
+                [-24.89, -51.55],
+                {"bubblingMouseEvents": true, "color": "#C44E52", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4C72B0", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.5225, "stroke": true, "weight": 3}
+            ).addTo(map_3b103810aca04eb638f81e268acca365);
+        
+    
+        var popup_5acd3de20cc7add6d2f8e2f90c06f698 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_beeb3520c11729778ed707e7471b0905 = $(`<div id="html_beeb3520c11729778ed707e7471b0905" style="width: 100.0%; height: 100.0%;">             <b>PR</b><br>             Orders: 5,045<br>             Revenue: R$683,083.76<br>             Late Rate: 4.88%             </div>`)[0];
+                popup_5acd3de20cc7add6d2f8e2f90c06f698.setContent(html_beeb3520c11729778ed707e7471b0905);
+            
+        
+
+        circle_marker_3459578ed5ebb0c610f82b1a0b4ae89f.bindPopup(popup_5acd3de20cc7add6d2f8e2f90c06f698)
+        ;
+
+        
+    
+    
+            circle_marker_3459578ed5ebb0c610f82b1a0b4ae89f.bindTooltip(
+                `<div>
+                     PR — 5,045 orders
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2ab6a1227f53710a18b198f22100c7cd = L.circleMarker(
+                [-27.242, -50.218],
+                {"bubblingMouseEvents": true, "color": "#C44E52", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4C72B0", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.8185, "stroke": true, "weight": 3}
+            ).addTo(map_3b103810aca04eb638f81e268acca365);
+        
+    
+        var popup_dc9444944105f3047010e51914df82ed = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_faacf30a4446142c597a13a6acf225a8 = $(`<div id="html_faacf30a4446142c597a13a6acf225a8" style="width: 100.0%; height: 100.0%;">             <b>SC</b><br>             Orders: 3,637<br>             Revenue: R$520,553.34<br>             Late Rate: 9.51%             </div>`)[0];
+                popup_dc9444944105f3047010e51914df82ed.setContent(html_faacf30a4446142c597a13a6acf225a8);
+            
+        
+
+        circle_marker_2ab6a1227f53710a18b198f22100c7cd.bindPopup(popup_dc9444944105f3047010e51914df82ed)
+        ;
+
+        
+    
+    
+            circle_marker_2ab6a1227f53710a18b198f22100c7cd.bindTooltip(
+                `<div>
+                     SC — 3,637 orders
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8d8f074f52d6e824332726a238b1b0d4 = L.circleMarker(
+                [-12.96, -38.51],
+                {"bubblingMouseEvents": true, "color": "#C44E52", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4C72B0", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.69, "stroke": true, "weight": 3}
+            ).addTo(map_3b103810aca04eb638f81e268acca365);
+        
+    
+        var popup_f0ddfe5c9eded48ac4fe18ca01e41b76 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_d031f5a136b9e395aa1f4f6bf1024c7f = $(`<div id="html_d031f5a136b9e395aa1f4f6bf1024c7f" style="width: 100.0%; height: 100.0%;">             <b>BA</b><br>             Orders: 3,380<br>             Revenue: R$511,349.99<br>             Late Rate: 13.52%             </div>`)[0];
+                popup_f0ddfe5c9eded48ac4fe18ca01e41b76.setContent(html_d031f5a136b9e395aa1f4f6bf1024c7f);
+            
+        
+
+        circle_marker_8d8f074f52d6e824332726a238b1b0d4.bindPopup(popup_f0ddfe5c9eded48ac4fe18ca01e41b76)
+        ;
+
+        
+    
+    
+            circle_marker_8d8f074f52d6e824332726a238b1b0d4.bindTooltip(
+                `<div>
+                     BA — 3,380 orders
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_58b914305ee4d7b8446d6dd623f53cc5 = L.circleMarker(
+                [-15.78, -47.929],
+                {"bubblingMouseEvents": true, "color": "#C44E52", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4C72B0", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.07, "stroke": true, "weight": 3}
+            ).addTo(map_3b103810aca04eb638f81e268acca365);
+        
+    
+        var popup_e1e379c1f59e97720e0a7527bc1274ef = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_6d08b9edbd44755b4ce9c47a24f8d167 = $(`<div id="html_6d08b9edbd44755b4ce9c47a24f8d167" style="width: 100.0%; height: 100.0%;">             <b>DF</b><br>             Orders: 2,140<br>             Revenue: R$302,603.94<br>             Late Rate: 6.87%             </div>`)[0];
+                popup_e1e379c1f59e97720e0a7527bc1274ef.setContent(html_6d08b9edbd44755b4ce9c47a24f8d167);
+            
+        
+
+        circle_marker_58b914305ee4d7b8446d6dd623f53cc5.bindPopup(popup_e1e379c1f59e97720e0a7527bc1274ef)
+        ;
+
+        
+    
+    
+            circle_marker_58b914305ee4d7b8446d6dd623f53cc5.bindTooltip(
+                `<div>
+                     DF — 2,140 orders
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_fec90c1b24631d22d58ee8cd95ef1f9c = L.circleMarker(
+                [-19.183, -40.308],
+                {"bubblingMouseEvents": true, "color": "#C44E52", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4C72B0", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.0165, "stroke": true, "weight": 3}
+            ).addTo(map_3b103810aca04eb638f81e268acca365);
+        
+    
+        var popup_7dab4e7fa3640b5898fbaf9decaa3b75 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_a659a05bf7399019f4147c0c13e342e3 = $(`<div id="html_a659a05bf7399019f4147c0c13e342e3" style="width: 100.0%; height: 100.0%;">             <b>ES</b><br>             Orders: 2,033<br>             Revenue: R$275,037.31<br>             Late Rate: 12.0%             </div>`)[0];
+                popup_7dab4e7fa3640b5898fbaf9decaa3b75.setContent(html_a659a05bf7399019f4147c0c13e342e3);
+            
+        
+
+        circle_marker_fec90c1b24631d22d58ee8cd95ef1f9c.bindPopup(popup_7dab4e7fa3640b5898fbaf9decaa3b75)
+        ;
+
+        
+    
+    
+            circle_marker_fec90c1b24631d22d58ee8cd95ef1f9c.bindTooltip(
+                `<div>
+                     ES — 2,033 orders
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6a5af93eaff475776283ba59c5df6663 = L.circleMarker(
+                [-15.827, -49.836],
+                {"bubblingMouseEvents": true, "color": "#C44E52", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4C72B0", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.01, "stroke": true, "weight": 3}
+            ).addTo(map_3b103810aca04eb638f81e268acca365);
+        
+    
+        var popup_659e47280a5886d0579dd0d50d1fd8d6 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_1ca447ce607e6b9e616eebd5918f3bb0 = $(`<div id="html_1ca447ce607e6b9e616eebd5918f3bb0" style="width: 100.0%; height: 100.0%;">             <b>GO</b><br>             Orders: 2,020<br>             Revenue: R$294,591.95<br>             Late Rate: 7.92%             </div>`)[0];
+                popup_659e47280a5886d0579dd0d50d1fd8d6.setContent(html_1ca447ce607e6b9e616eebd5918f3bb0);
+            
+        
+
+        circle_marker_6a5af93eaff475776283ba59c5df6663.bindPopup(popup_659e47280a5886d0579dd0d50d1fd8d6)
+        ;
+
+        
+    
+    
+            circle_marker_6a5af93eaff475776283ba59c5df6663.bindTooltip(
+                `<div>
+                     GO — 2,020 orders
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_70ab9cf2d1a4ea2531ef0e31faae083a = L.circleMarker(
+                [-8.8137, -36.954],
+                {"bubblingMouseEvents": true, "color": "#C44E52", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4C72B0", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.826, "stroke": true, "weight": 3}
+            ).addTo(map_3b103810aca04eb638f81e268acca365);
+        
+    
+        var popup_aca7b3a461849d8c51f4c7983252d9a1 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_7108f7951da83ec3269632cd0580a327 = $(`<div id="html_7108f7951da83ec3269632cd0580a327" style="width: 100.0%; height: 100.0%;">             <b>PE</b><br>             Orders: 1,652<br>             Revenue: R$262,788.03<br>             Late Rate: 10.41%             </div>`)[0];
+                popup_aca7b3a461849d8c51f4c7983252d9a1.setContent(html_7108f7951da83ec3269632cd0580a327);
+            
+        
+
+        circle_marker_70ab9cf2d1a4ea2531ef0e31faae083a.bindPopup(popup_aca7b3a461849d8c51f4c7983252d9a1)
+        ;
+
+        
+    
+    
+            circle_marker_70ab9cf2d1a4ea2531ef0e31faae083a.bindTooltip(
+                `<div>
+                     PE — 1,652 orders
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_22c64247c7caff3db70425338f209c4a = L.circleMarker(
+                [-3.7172, -38.543],
+                {"bubblingMouseEvents": true, "color": "#C44E52", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4C72B0", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.668, "stroke": true, "weight": 3}
+            ).addTo(map_3b103810aca04eb638f81e268acca365);
+        
+    
+        var popup_7b045742d20c54a5be80eb40dedf6aa7 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_8f5e2acb161d488d5e5d117bcab583fa = $(`<div id="html_8f5e2acb161d488d5e5d117bcab583fa" style="width: 100.0%; height: 100.0%;">             <b>CE</b><br>             Orders: 1,336<br>             Revenue: R$227,254.71<br>             Late Rate: 14.67%             </div>`)[0];
+                popup_7b045742d20c54a5be80eb40dedf6aa7.setContent(html_8f5e2acb161d488d5e5d117bcab583fa);
+            
+        
+
+        circle_marker_22c64247c7caff3db70425338f209c4a.bindPopup(popup_7b045742d20c54a5be80eb40dedf6aa7)
+        ;
+
+        
+    
+    
+            circle_marker_22c64247c7caff3db70425338f209c4a.bindTooltip(
+                `<div>
+                     CE — 1,336 orders
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_bf4c6f98958ec50a3083caeb7887e1c3 = L.circleMarker(
+                [-1.993, -54.93],
+                {"bubblingMouseEvents": true, "color": "#C44E52", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4C72B0", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.4875, "stroke": true, "weight": 3}
+            ).addTo(map_3b103810aca04eb638f81e268acca365);
+        
+    
+        var popup_f7db25680b99883bc34c9cb0057ee2c0 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_3908ba07925c4274d5006215ec3f78ab = $(`<div id="html_3908ba07925c4274d5006215ec3f78ab" style="width: 100.0%; height: 100.0%;">             <b>PA</b><br>             Orders: 975<br>             Revenue: R$178,947.81<br>             Late Rate: 12.0%             </div>`)[0];
+                popup_f7db25680b99883bc34c9cb0057ee2c0.setContent(html_3908ba07925c4274d5006215ec3f78ab);
+            
+        
+
+        circle_marker_bf4c6f98958ec50a3083caeb7887e1c3.bindPopup(popup_f7db25680b99883bc34c9cb0057ee2c0)
+        ;
+
+        
+    
+    
+            circle_marker_bf4c6f98958ec50a3083caeb7887e1c3.bindTooltip(
+                `<div>
+                     PA — 975 orders
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_95c92037fe92cedc17ddc80e6f305d09 = L.circleMarker(
+                [-12.64, -55.42],
+                {"bubblingMouseEvents": true, "color": "#C44E52", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4C72B0", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.4535, "stroke": true, "weight": 3}
+            ).addTo(map_3b103810aca04eb638f81e268acca365);
+        
+    
+        var popup_758e4af68c1b78964e1f02644140093a = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_f2dcab7d4c90063340e7068a3acbaeaf = $(`<div id="html_f2dcab7d4c90063340e7068a3acbaeaf" style="width: 100.0%; height: 100.0%;">             <b>MT</b><br>             Orders: 907<br>             Revenue: R$156,453.53<br>             Late Rate: 6.62%             </div>`)[0];
+                popup_758e4af68c1b78964e1f02644140093a.setContent(html_f2dcab7d4c90063340e7068a3acbaeaf);
+            
+        
+
+        circle_marker_95c92037fe92cedc17ddc80e6f305d09.bindPopup(popup_758e4af68c1b78964e1f02644140093a)
+        ;
+
+        
+    
+    
+            circle_marker_95c92037fe92cedc17ddc80e6f305d09.bindTooltip(
+                `<div>
+                     MT — 907 orders
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_59220e90d06f44321201cab96bf1f250 = L.circleMarker(
+                [-2.5297, -44.302],
+                {"bubblingMouseEvents": true, "color": "#C44E52", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4C72B0", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.3735, "stroke": true, "weight": 3}
+            ).addTo(map_3b103810aca04eb638f81e268acca365);
+        
+    
+        var popup_716fffc27e633f6307d81ce2e390efa8 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_92c394ad19c054eb68c2f4f5ac0d7ef0 = $(`<div id="html_92c394ad19c054eb68c2f4f5ac0d7ef0" style="width: 100.0%; height: 100.0%;">             <b>MA</b><br>             Orders: 747<br>             Revenue: R$119,648.22<br>             Late Rate: 18.88%             </div>`)[0];
+                popup_716fffc27e633f6307d81ce2e390efa8.setContent(html_92c394ad19c054eb68c2f4f5ac0d7ef0);
+            
+        
+
+        circle_marker_59220e90d06f44321201cab96bf1f250.bindPopup(popup_716fffc27e633f6307d81ce2e390efa8)
+        ;
+
+        
+    
+    
+            circle_marker_59220e90d06f44321201cab96bf1f250.bindTooltip(
+                `<div>
+                     MA — 747 orders
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0b37f113114960cbd7f4f889467b4579 = L.circleMarker(
+                [-20.469, -54.62],
+                {"bubblingMouseEvents": true, "color": "#C44E52", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4C72B0", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.3575, "stroke": true, "weight": 3}
+            ).addTo(map_3b103810aca04eb638f81e268acca365);
+        
+    
+        var popup_a5be4e2f7bbbea6d8788973af8e536d2 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_7c1efb62710952597fd3d48978258e3a = $(`<div id="html_7c1efb62710952597fd3d48978258e3a" style="width: 100.0%; height: 100.0%;">             <b>MS</b><br>             Orders: 715<br>             Revenue: R$116,812.64<br>             Late Rate: 11.33%             </div>`)[0];
+                popup_a5be4e2f7bbbea6d8788973af8e536d2.setContent(html_7c1efb62710952597fd3d48978258e3a);
+            
+        
+
+        circle_marker_0b37f113114960cbd7f4f889467b4579.bindPopup(popup_a5be4e2f7bbbea6d8788973af8e536d2)
+        ;
+
+        
+    
+    
+            circle_marker_0b37f113114960cbd7f4f889467b4579.bindTooltip(
+                `<div>
+                     MS — 715 orders
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_40759a1a3ab4dbe7f92074227a959d0e = L.circleMarker(
+                [-7.1195, -36.724],
+                {"bubblingMouseEvents": true, "color": "#C44E52", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4C72B0", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.268, "stroke": true, "weight": 3}
+            ).addTo(map_3b103810aca04eb638f81e268acca365);
+        
+    
+        var popup_22b4e7f7d42016cc769f869fb0474645 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_e1061cb5838b4e54f215de12f932ad5b = $(`<div id="html_e1061cb5838b4e54f215de12f932ad5b" style="width: 100.0%; height: 100.0%;">             <b>PB</b><br>             Orders: 536<br>             Revenue: R$115,268.08<br>             Late Rate: 10.63%             </div>`)[0];
+                popup_22b4e7f7d42016cc769f869fb0474645.setContent(html_e1061cb5838b4e54f215de12f932ad5b);
+            
+        
+
+        circle_marker_40759a1a3ab4dbe7f92074227a959d0e.bindPopup(popup_22b4e7f7d42016cc769f869fb0474645)
+        ;
+
+        
+    
+    
+            circle_marker_40759a1a3ab4dbe7f92074227a959d0e.bindTooltip(
+                `<div>
+                     PB — 536 orders
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f8ff1e507b5ec61483e8a8e5d810a1a1 = L.circleMarker(
+                [-7.7183, -42.728],
+                {"bubblingMouseEvents": true, "color": "#C44E52", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4C72B0", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.2475, "stroke": true, "weight": 3}
+            ).addTo(map_3b103810aca04eb638f81e268acca365);
+        
+    
+        var popup_c81587cb8a9afa49cf69d8fe0ee4a8ae = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_f87d83859026b4ee7667664704a16284 = $(`<div id="html_f87d83859026b4ee7667664704a16284" style="width: 100.0%; height: 100.0%;">             <b>PI</b><br>             Orders: 495<br>             Revenue: R$86,914.08<br>             Late Rate: 15.35%             </div>`)[0];
+                popup_c81587cb8a9afa49cf69d8fe0ee4a8ae.setContent(html_f87d83859026b4ee7667664704a16284);
+            
+        
+
+        circle_marker_f8ff1e507b5ec61483e8a8e5d810a1a1.bindPopup(popup_c81587cb8a9afa49cf69d8fe0ee4a8ae)
+        ;
+
+        
+    
+    
+            circle_marker_f8ff1e507b5ec61483e8a8e5d810a1a1.bindTooltip(
+                `<div>
+                     PI — 495 orders
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_cf308113313ae362c0d273ca3b625c68 = L.circleMarker(
+                [-5.8127, -36.204],
+                {"bubblingMouseEvents": true, "color": "#C44E52", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4C72B0", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.2425, "stroke": true, "weight": 3}
+            ).addTo(map_3b103810aca04eb638f81e268acca365);
+        
+    
+        var popup_1dbd8067f78be9f16c95f07ba6f4e83b = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_d770ef6a633993cda818bd6d027e0e4c = $(`<div id="html_d770ef6a633993cda818bd6d027e0e4c" style="width: 100.0%; height: 100.0%;">             <b>RN</b><br>             Orders: 485<br>             Revenue: R$83,034.98<br>             Late Rate: 10.52%             </div>`)[0];
+                popup_1dbd8067f78be9f16c95f07ba6f4e83b.setContent(html_d770ef6a633993cda818bd6d027e0e4c);
+            
+        
+
+        circle_marker_cf308113313ae362c0d273ca3b625c68.bindPopup(popup_1dbd8067f78be9f16c95f07ba6f4e83b)
+        ;
+
+        
+    
+    
+            circle_marker_cf308113313ae362c0d273ca3b625c68.bindTooltip(
+                `<div>
+                     RN — 485 orders
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5ada5a1e3ac8b2d18125ac75ac386d1a = L.circleMarker(
+                [-9.5713, -36.782],
+                {"bubblingMouseEvents": true, "color": "#C44E52", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4C72B0", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.2065, "stroke": true, "weight": 3}
+            ).addTo(map_3b103810aca04eb638f81e268acca365);
+        
+    
+        var popup_15d2c6b18a42d991daa8d7f5b7e6a202 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_12517a7bb15a972c3f294c092564e62c = $(`<div id="html_12517a7bb15a972c3f294c092564e62c" style="width: 100.0%; height: 100.0%;">             <b>AL</b><br>             Orders: 413<br>             Revenue: R$80,314.81<br>             Late Rate: 23.0%             </div>`)[0];
+                popup_15d2c6b18a42d991daa8d7f5b7e6a202.setContent(html_12517a7bb15a972c3f294c092564e62c);
+            
+        
+
+        circle_marker_5ada5a1e3ac8b2d18125ac75ac386d1a.bindPopup(popup_15d2c6b18a42d991daa8d7f5b7e6a202)
+        ;
+
+        
+    
+    
+            circle_marker_5ada5a1e3ac8b2d18125ac75ac386d1a.bindTooltip(
+                `<div>
+                     AL — 413 orders
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_af7b07000feef01c726eb990d10e0095 = L.circleMarker(
+                [-10.574, -37.385],
+                {"bubblingMouseEvents": true, "color": "#C44E52", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4C72B0", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.175, "stroke": true, "weight": 3}
+            ).addTo(map_3b103810aca04eb638f81e268acca365);
+        
+    
+        var popup_9838e8057c4f05b3c67ed0548371e39f = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_2874066300ef5cd7e91b76b0d2bca541 = $(`<div id="html_2874066300ef5cd7e91b76b0d2bca541" style="width: 100.0%; height: 100.0%;">             <b>SE</b><br>             Orders: 350<br>             Revenue: R$58,920.85<br>             Late Rate: 14.57%             </div>`)[0];
+                popup_9838e8057c4f05b3c67ed0548371e39f.setContent(html_2874066300ef5cd7e91b76b0d2bca541);
+            
+        
+
+        circle_marker_af7b07000feef01c726eb990d10e0095.bindPopup(popup_9838e8057c4f05b3c67ed0548371e39f)
+        ;
+
+        
+    
+    
+            circle_marker_af7b07000feef01c726eb990d10e0095.bindTooltip(
+                `<div>
+                     SE — 350 orders
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9fe229f322be3094eebac1cbf06b0cd6 = L.circleMarker(
+                [-10.24, -48.324],
+                {"bubblingMouseEvents": true, "color": "#C44E52", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4C72B0", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.14, "stroke": true, "weight": 3}
+            ).addTo(map_3b103810aca04eb638f81e268acca365);
+        
+    
+        var popup_6f251dd94700c80b402f2908eeb0b30f = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_31f1991b1355419b00424cbe009552d2 = $(`<div id="html_31f1991b1355419b00424cbe009552d2" style="width: 100.0%; height: 100.0%;">             <b>TO</b><br>             Orders: 280<br>             Revenue: R$49,621.74<br>             Late Rate: 12.5%             </div>`)[0];
+                popup_6f251dd94700c80b402f2908eeb0b30f.setContent(html_31f1991b1355419b00424cbe009552d2);
+            
+        
+
+        circle_marker_9fe229f322be3094eebac1cbf06b0cd6.bindPopup(popup_6f251dd94700c80b402f2908eeb0b30f)
+        ;
+
+        
+    
+    
+            circle_marker_9fe229f322be3094eebac1cbf06b0cd6.bindTooltip(
+                `<div>
+                     TO — 280 orders
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_99534174ddedb5e2ff092a8800190bc0 = L.circleMarker(
+                [-10.83, -63.34],
+                {"bubblingMouseEvents": true, "color": "#C44E52", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4C72B0", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.1265, "stroke": true, "weight": 3}
+            ).addTo(map_3b103810aca04eb638f81e268acca365);
+        
+    
+        var popup_d7c96815aec8ffc9a4d51b2c8fd78aa1 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_7a438c33c2b7d08e7d769b977d393b54 = $(`<div id="html_7a438c33c2b7d08e7d769b977d393b54" style="width: 100.0%; height: 100.0%;">             <b>RO</b><br>             Orders: 253<br>             Revenue: R$46,140.64<br>             Late Rate: 2.77%             </div>`)[0];
+                popup_d7c96815aec8ffc9a4d51b2c8fd78aa1.setContent(html_7a438c33c2b7d08e7d769b977d393b54);
+            
+        
+
+        circle_marker_99534174ddedb5e2ff092a8800190bc0.bindPopup(popup_d7c96815aec8ffc9a4d51b2c8fd78aa1)
+        ;
+
+        
+    
+    
+            circle_marker_99534174ddedb5e2ff092a8800190bc0.bindTooltip(
+                `<div>
+                     RO — 253 orders
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_dd02d3c59cfe3c7e2d3b83c352859c8d = L.circleMarker(
+                [-3.4168, -65.856],
+                {"bubblingMouseEvents": true, "color": "#C44E52", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4C72B0", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.074, "stroke": true, "weight": 3}
+            ).addTo(map_3b103810aca04eb638f81e268acca365);
+        
+    
+        var popup_e7de9dc68eccded4c7212e777d512368 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_6b2f20c502c30f55e1d1bca38b6ee9a8 = $(`<div id="html_6b2f20c502c30f55e1d1bca38b6ee9a8" style="width: 100.0%; height: 100.0%;">             <b>AM</b><br>             Orders: 148<br>             Revenue: R$22,356.84<br>             Late Rate: 4.05%             </div>`)[0];
+                popup_e7de9dc68eccded4c7212e777d512368.setContent(html_6b2f20c502c30f55e1d1bca38b6ee9a8);
+            
+        
+
+        circle_marker_dd02d3c59cfe3c7e2d3b83c352859c8d.bindPopup(popup_e7de9dc68eccded4c7212e777d512368)
+        ;
+
+        
+    
+    
+            circle_marker_dd02d3c59cfe3c7e2d3b83c352859c8d.bindTooltip(
+                `<div>
+                     AM — 148 orders
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_beb61b42bbc5f4a765c367cf07e27de5 = L.circleMarker(
+                [-9.0238, -70.812],
+                {"bubblingMouseEvents": true, "color": "#C44E52", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4C72B0", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.0405, "stroke": true, "weight": 3}
+            ).addTo(map_3b103810aca04eb638f81e268acca365);
+        
+    
+        var popup_26d17f24648ebaa357dbc62e133a35a8 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_280ba2005dd28a8d60538e88a3a8104f = $(`<div id="html_280ba2005dd28a8d60538e88a3a8104f" style="width: 100.0%; height: 100.0%;">             <b>AC</b><br>             Orders: 81<br>             Revenue: R$15,982.95<br>             Late Rate: 3.7%             </div>`)[0];
+                popup_26d17f24648ebaa357dbc62e133a35a8.setContent(html_280ba2005dd28a8d60538e88a3a8104f);
+            
+        
+
+        circle_marker_beb61b42bbc5f4a765c367cf07e27de5.bindPopup(popup_26d17f24648ebaa357dbc62e133a35a8)
+        ;
+
+        
+    
+    
+            circle_marker_beb61b42bbc5f4a765c367cf07e27de5.bindTooltip(
+                `<div>
+                     AC — 81 orders
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ded51b6564099a3a8880f67b4d7a2ddf = L.circleMarker(
+                [1.4102, -51.77],
+                {"bubblingMouseEvents": true, "color": "#C44E52", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4C72B0", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.034, "stroke": true, "weight": 3}
+            ).addTo(map_3b103810aca04eb638f81e268acca365);
+        
+    
+        var popup_7d785d3e7a0ae999a77e4acc9456f921 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_0cb0b10384fcd97c90e1a46276ec46f7 = $(`<div id="html_0cb0b10384fcd97c90e1a46276ec46f7" style="width: 100.0%; height: 100.0%;">             <b>AP</b><br>             Orders: 68<br>             Revenue: R$13,474.3<br>             Late Rate: 4.41%             </div>`)[0];
+                popup_7d785d3e7a0ae999a77e4acc9456f921.setContent(html_0cb0b10384fcd97c90e1a46276ec46f7);
+            
+        
+
+        circle_marker_ded51b6564099a3a8880f67b4d7a2ddf.bindPopup(popup_7d785d3e7a0ae999a77e4acc9456f921)
+        ;
+
+        
+    
+    
+            circle_marker_ded51b6564099a3a8880f67b4d7a2ddf.bindTooltip(
+                `<div>
+                     AP — 68 orders
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_11aaf39d4cf50ad545da54b209af7340 = L.circleMarker(
+                [1.99, -61.33],
+                {"bubblingMouseEvents": true, "color": "#C44E52", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4C72B0", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.023, "stroke": true, "weight": 3}
+            ).addTo(map_3b103810aca04eb638f81e268acca365);
+        
+    
+        var popup_69f6781e3e21e5cee82115996f6df2c4 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_a0ef51bc65e3e84c867041f7dee900f5 = $(`<div id="html_a0ef51bc65e3e84c867041f7dee900f5" style="width: 100.0%; height: 100.0%;">             <b>RR</b><br>             Orders: 46<br>             Revenue: R$7,829.43<br>             Late Rate: 10.87%             </div>`)[0];
+                popup_69f6781e3e21e5cee82115996f6df2c4.setContent(html_a0ef51bc65e3e84c867041f7dee900f5);
+            
+        
+
+        circle_marker_11aaf39d4cf50ad545da54b209af7340.bindPopup(popup_69f6781e3e21e5cee82115996f6df2c4)
+        ;
+
+        
+    
+    
+            circle_marker_11aaf39d4cf50ad545da54b209af7340.bindTooltip(
+                `<div>
+                     RR — 46 orders
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+</script>
+</html>
