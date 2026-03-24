@@ -1,0 +1,49 @@
+2026-03-24 10:11:27,026 | __main__ | INFO | STARTING FULL INGESTION PIPELINE...
+2026-03-24 10:11:27,383 | __main__ | INFO | INGESTION COMPLETED olist_orders_dataset.csv | ROWS: 99441 | COLS: 8
+2026-03-24 10:11:27,539 | __main__ | INFO | ORDERS INGESTION COMPLETED
+2026-03-24 10:11:27,787 | __main__ | INFO | INGESTION COMPLETED olist_order_items_dataset.csv | ROWS: 112650 | COLS: 7
+2026-03-24 10:11:27,827 | __main__ | INFO | ORDER ITEMS INGESTION COMPLETED
+2026-03-24 10:11:27,965 | __main__ | INFO | INGESTION COMPLETED olist_customers_dataset.csv | ROWS: 99441 | COLS: 5
+2026-03-24 10:11:27,965 | __main__ | INFO | CUSTOMERS INGESTION COMPLETED
+2026-03-24 10:11:27,970 | __main__ | INFO | INGESTION COMPLETED olist_sellers_dataset.csv | ROWS: 3095 | COLS: 4
+2026-03-24 10:11:27,971 | __main__ | INFO | SELLERS INGESTION COMPLETED
+2026-03-24 10:11:28,020 | __main__ | INFO | INGESTION COMPLETED olist_products_dataset.csv | ROWS: 32951 | COLS: 9
+2026-03-24 10:11:28,021 | __main__ | INFO | PRODUCTS INGESTION COMPLETED
+2026-03-24 10:11:28,109 | __main__ | INFO | INGESTION COMPLETED olist_order_payments_dataset.csv | ROWS: 103886 | COLS: 5
+2026-03-24 10:11:28,110 | __main__ | INFO | PAYMENTS INGESTION COMPLETED
+2026-03-24 10:11:28,439 | __main__ | INFO | INGESTION COMPLETED olist_order_reviews_dataset.csv | ROWS: 99224 | COLS: 7
+2026-03-24 10:11:28,486 | __main__ | INFO | REVIEWS INGESTION COMPLETED
+2026-03-24 10:11:29,084 | __main__ | INFO | INGESTION COMPLETED olist_geolocation_dataset.csv | ROWS: 1000163 | COLS: 5
+2026-03-24 10:11:29,089 | __main__ | INFO | GEOLOCATION INGESTION COMPLETED
+2026-03-24 10:11:29,100 | __main__ | INFO | INGESTION COMPLETED product_category_name_translation.csv | ROWS: 71 | COLS: 2
+2026-03-24 10:11:29,100 | __main__ | INFO | CATEGORY TRANSLATION INGESTION COMPLETED
+2026-03-24 10:11:29,569 | __main__ | INFO | SAVED: C:\Users\razin\Projects\olist-360\data\processed\orders_processed.csv
+2026-03-24 10:11:30,016 | __main__ | INFO | SAVED: C:\Users\razin\Projects\olist-360\data\processed\order_items_processed.csv
+2026-03-24 10:11:30,221 | __main__ | INFO | SAVED: C:\Users\razin\Projects\olist-360\data\processed\customers_processed.csv
+2026-03-24 10:11:30,227 | __main__ | INFO | SAVED: C:\Users\razin\Projects\olist-360\data\processed\sellers_processed.csv
+2026-03-24 10:11:30,373 | __main__ | INFO | SAVED: C:\Users\razin\Projects\olist-360\data\processed\products_processed.csv
+2026-03-24 10:11:30,578 | __main__ | INFO | SAVED: C:\Users\razin\Projects\olist-360\data\processed\payments_processed.csv
+2026-03-24 10:11:31,008 | __main__ | INFO | SAVED: C:\Users\razin\Projects\olist-360\data\processed\reviews_processed.csv
+2026-03-24 10:11:34,215 | __main__ | INFO | SAVED: C:\Users\razin\Projects\olist-360\data\processed\geolocation_processed.csv
+2026-03-24 10:11:34,218 | __main__ | INFO | SAVED: C:\Users\razin\Projects\olist-360\data\processed\category_translation_processed.csv
+2026-03-24 10:11:34,218 | __main__ | INFO | PIPELINE COMPLETE — 9 tables ingested and saved
+2026-03-24 10:14:39,798 | __main__ | INFO | STARTING WAREHOUSE BUILD...
+2026-03-24 10:14:39,828 | __main__ | INFO | CONNECTED TO WAREHOUSE: C:\Users\razin\Projects\olist-360\data\warehouse\olist.duckdb
+2026-03-24 10:14:40,304 | __main__ | INFO | LOADED orders_processed.csv
+2026-03-24 10:14:40,619 | __main__ | INFO | LOADED order_items_processed.csv
+2026-03-24 10:14:40,828 | __main__ | INFO | LOADED customers_processed.csv
+2026-03-24 10:14:40,835 | __main__ | INFO | LOADED sellers_processed.csv
+2026-03-24 10:14:40,900 | __main__ | INFO | LOADED products_processed.csv
+2026-03-24 10:14:41,031 | __main__ | INFO | LOADED payments_processed.csv
+2026-03-24 10:14:41,490 | __main__ | INFO | LOADED reviews_processed.csv
+2026-03-24 10:14:42,401 | __main__ | INFO | LOADED geolocation_processed.csv
+2026-03-24 10:14:42,403 | __main__ | INFO | LOADED category_translation_processed.csv
+2026-03-24 10:14:42,638 | __main__ | INFO | dim_customer CREATED — 99441 rows
+2026-03-24 10:14:42,647 | __main__ | INFO | dim_seller CREATED — 3095 rows
+2026-03-24 10:14:42,721 | __main__ | INFO | dim_product CREATED — 32951 rows
+2026-03-24 10:14:44,361 | __main__ | INFO | dim_date CREATED — 98875 rows
+2026-03-24 10:14:44,504 | __main__ | INFO | dim_payment CREATED — 103272 rows
+2026-03-24 10:14:44,797 | __main__ | INFO | dim_geolocation CREATED — 19023 rows
+2026-03-24 10:14:45,846 | __main__ | INFO | fact_orders CREATED — 99441 rows
+2026-03-24 10:14:45,868 | __main__ | INFO | WAREHOUSE TABLES: ['dim_customer', 'dim_date', 'dim_geolocation', 'dim_payment', 'dim_product', 'dim_seller', 'fact_orders']
+2026-03-24 10:14:45,877 | __main__ | INFO | WAREHOUSE BUILD COMPLETE

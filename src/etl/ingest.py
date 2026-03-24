@@ -12,25 +12,30 @@ from pathlib import Path
 # ── Paths ──────────────────────────────────────────────────────────────
 BASE_DIR = Path(__file__).resolve().parents[2]
 # __file__ is src/etl/extract.py
-# .parents[2] goes up 2 levels to olist-360/
+# .parents[2] goes up 2 levels to olist-360gith/
 
 RAW       = BASE_DIR / "data/raw"
 PROCESSED = BASE_DIR / "data/processed"
 LOGS      = BASE_DIR / "logs"
 
-# Create folders if they don't exist
 PROCESSED.mkdir(parents=True, exist_ok=True)
 LOGS.mkdir(exist_ok=True)
 
-# ── Logging setup ───────────────────────────────────────────────────────
-logging.basicConfig(
-    level=logging.INFO,
-    format="%(asctime)s — %(levelname)s — %(message)s"
-)
 logger = logging.getLogger(__name__)
+logger.setLevel(logging.INFO)
+
+formatter = logging.Formatter("%(asctime)s | %(name)s | %(levelname)s | %(message)s")
+
+console_handler = logging.StreamHandler()
+console_handler.setFormatter(formatter)
+
+file_handler = logging.FileHandler(LOGS / "pipeline.log")
+file_handler.setFormatter(formatter)
+
+logger.addHandler(console_handler)
+logger.addHandler(file_handler)
 
 
-# ── Base functions (same as your style) ────────────────────────────────
 
 def ingestion(file_path: Path) -> pd.DataFrame:
     """Reads a CSV file and returns a DataFrame."""
@@ -59,7 +64,6 @@ def save(df: pd.DataFrame, filename: str) -> None:
     logger.info(f"SAVED: {output}")
 
 
-# ── One function per table (your exact style) ───────────────────────────
 
 def ingest_orders() -> pd.DataFrame:
     df = ingestion(RAW / "olist_orders_dataset.csv")
@@ -148,7 +152,6 @@ def ingest_category_translation() -> pd.DataFrame:
     return df
 
 
-# ── Run all ─────────────────────────────────────────────────────────────
 
 def run_all():
     logger.info("STARTING FULL INGESTION PIPELINE...")

@@ -18,12 +18,22 @@ BASE_DIR  = Path(__file__).resolve().parents[2]
 PROCESSED = BASE_DIR / "data/processed"
 WAREHOUSE = BASE_DIR / "data/warehouse/olist.duckdb"
 
-# ── Logging ─────────────────────────────────────────────────────────────
-logging.basicConfig(
-    level=logging.INFO,
-    format="%(asctime)s | %(name)s | %(levelname)s | %(message)s"
-)
+LOGS = BASE_DIR / "logs"
+LOGS.mkdir(exist_ok=True)
+
 logger = logging.getLogger(__name__)
+logger.setLevel(logging.INFO)
+
+formatter = logging.Formatter("%(asctime)s | %(name)s | %(levelname)s | %(message)s")
+
+console_handler = logging.StreamHandler()
+console_handler.setFormatter(formatter)
+
+file_handler = logging.FileHandler(LOGS / "pipeline.log")
+file_handler.setFormatter(formatter)
+
+logger.addHandler(console_handler)
+logger.addHandler(file_handler)
 
 
 # ── Connect to DuckDB ────────────────────────────────────────────────────
