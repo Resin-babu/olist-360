@@ -1,0 +1,1 @@
+["total_price", "total_freight", "item_count", "product_weight_g", "product_volume_cm3", "freight_ratio", "is_same_state", "customer_state", "seller_state", "category", "payment_type", "payment_installments", "order_month", "order_hour", "order_dayofweek"]
