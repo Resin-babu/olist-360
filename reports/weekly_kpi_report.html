@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    body { font-family: Arial, sans-serif; background: #f4f4f4; margin: 0; padding: 20px; }
+    .container { max-width: 650px; margin: auto; background: white; border-radius: 8px; overflow: hidden; }
+    .header { background: #1a1a2e; color: white; padding: 30px; text-align: center; }
+    .header h1 { margin: 0; font-size: 24px; }
+    .header p { margin: 5px 0 0; color: #aaa; font-size: 14px; }
+    .kpi-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; padding: 25px; }
+    .kpi-card { background: #f8f9fa; border-radius: 8px; padding: 20px; text-align: center; border-left: 4px solid #4C72B0; }
+    .kpi-card .value { font-size: 28px; font-weight: bold; color: #1a1a2e; }
+    .kpi-card .label { font-size: 12px; color: #666; margin-top: 5px; text-transform: uppercase; }
+    .section { padding: 0 25px 25px; }
+    .section h2 { color: #1a1a2e; border-bottom: 2px solid #4C72B0; padding-bottom: 8px; }
+    .insight { background: #e8f4fd; border-radius: 6px; padding: 12px 15px; margin: 8px 0; font-size: 14px; }
+    .footer { background: #f8f9fa; padding: 20px; text-align: center; font-size: 12px; color: #999; }
+    .alert { background: #fff3cd; border-left: 4px solid #ffc107; padding: 12px 15px; border-radius: 6px; }
+</style>
+</head>
+<body>
+<div class="container">
+
+    <div class="header">
+        <h1>Olist 360 Weekly KPI Report</h1>
+        <p>Generated: March 25, 2026</p>
+    </div>
+
+    <div class="kpi-grid">
+        <div class="kpi-card">
+            <div class="value">99,441</div>
+            <div class="label">Total Orders</div>
+        </div>
+        <div class="kpi-card">
+            <div class="value">R$13,591,644</div>
+            <div class="label">Total Revenue</div>
+        </div>
+        <div class="kpi-card">
+            <div class="value">R$137.75</div>
+            <div class="label">Avg Order Value</div>
+        </div>
+        <div class="kpi-card">
+            <div class="value">7.87%</div>
+            <div class="label">Late Delivery Rate</div>
+        </div>
+        <div class="kpi-card">
+            <div class="value">4.09</div>
+            <div class="label">Avg Review Score</div>
+        </div>
+        <div class="kpi-card">
+            <div class="value">96,478</div>
+            <div class="label">Delivered Orders</div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Key Insights</h2>
+        <div class="insight">Top performing state: <strong>SP</strong></div>
+        <div class="insight">Top revenue category: <strong>health_beauty</strong></div>
+        <div class="insight">Overall data quality score: <strong>100%</strong></div>
+    </div>
+
+    <div class="section">
+        <h2>Alerts</h2>
+        
+        <div class="insight">All KPIs within normal range</div>
+        
+    </div>
+
+    <div class="footer">
+        Olist 360 Intelligence Platform | Automated Weekly Report<br>
+        Built with Python, DuckDB, and Streamlit
+    </div>
+
+</div>
+</body>
+</html>

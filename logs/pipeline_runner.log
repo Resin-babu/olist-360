@@ -1,0 +1,119 @@
+2026-03-25 01:36:32,328 | pipeline_runner | INFO | =======================================================
+2026-03-25 01:36:32,329 | pipeline_runner | INFO | OLIST 360 AUTOMATED PIPELINE STARTING
+2026-03-25 01:36:32,330 | pipeline_runner | INFO | Started at: 2026-03-25 01:36:32
+2026-03-25 01:36:32,331 | pipeline_runner | INFO | =======================================================
+2026-03-25 01:36:32,332 | pipeline_runner | INFO | STEP 1 — Ingestion starting...
+2026-03-25 01:36:33,718 | src.etl.ingest | INFO | STARTING FULL INGESTION PIPELINE...
+2026-03-25 01:36:34,213 | src.etl.ingest | INFO | INGESTION COMPLETED olist_orders_dataset.csv | ROWS: 99441 | COLS: 8
+2026-03-25 01:36:34,427 | src.etl.ingest | INFO | ORDERS INGESTION COMPLETED
+2026-03-25 01:36:34,757 | src.etl.ingest | INFO | INGESTION COMPLETED olist_order_items_dataset.csv | ROWS: 112650 | COLS: 7
+2026-03-25 01:36:34,809 | src.etl.ingest | INFO | ORDER ITEMS INGESTION COMPLETED
+2026-03-25 01:36:34,994 | src.etl.ingest | INFO | INGESTION COMPLETED olist_customers_dataset.csv | ROWS: 99441 | COLS: 5
+2026-03-25 01:36:34,995 | src.etl.ingest | INFO | CUSTOMERS INGESTION COMPLETED
+2026-03-25 01:36:35,002 | src.etl.ingest | INFO | INGESTION COMPLETED olist_sellers_dataset.csv | ROWS: 3095 | COLS: 4
+2026-03-25 01:36:35,003 | src.etl.ingest | INFO | SELLERS INGESTION COMPLETED
+2026-03-25 01:36:35,057 | src.etl.ingest | INFO | INGESTION COMPLETED olist_products_dataset.csv | ROWS: 32951 | COLS: 9
+2026-03-25 01:36:35,061 | src.etl.ingest | INFO | PRODUCTS INGESTION COMPLETED
+2026-03-25 01:36:35,176 | src.etl.ingest | INFO | INGESTION COMPLETED olist_order_payments_dataset.csv | ROWS: 103886 | COLS: 5
+2026-03-25 01:36:35,179 | src.etl.ingest | INFO | PAYMENTS INGESTION COMPLETED
+2026-03-25 01:36:35,601 | src.etl.ingest | INFO | INGESTION COMPLETED olist_order_reviews_dataset.csv | ROWS: 99224 | COLS: 7
+2026-03-25 01:36:35,657 | src.etl.ingest | INFO | REVIEWS INGESTION COMPLETED
+2026-03-25 01:36:36,349 | src.etl.ingest | INFO | INGESTION COMPLETED olist_geolocation_dataset.csv | ROWS: 1000163 | COLS: 5
+2026-03-25 01:36:36,359 | src.etl.ingest | INFO | GEOLOCATION INGESTION COMPLETED
+2026-03-25 01:36:36,363 | src.etl.ingest | INFO | INGESTION COMPLETED product_category_name_translation.csv | ROWS: 71 | COLS: 2
+2026-03-25 01:36:36,365 | src.etl.ingest | INFO | CATEGORY TRANSLATION INGESTION COMPLETED
+2026-03-25 01:36:37,094 | src.etl.ingest | INFO | SAVED: C:\Users\razin\Projects\olist-360\data\processed\orders_processed.csv
+2026-03-25 01:36:37,607 | src.etl.ingest | INFO | SAVED: C:\Users\razin\Projects\olist-360\data\processed\order_items_processed.csv
+2026-03-25 01:36:37,824 | src.etl.ingest | INFO | SAVED: C:\Users\razin\Projects\olist-360\data\processed\customers_processed.csv
+2026-03-25 01:36:37,830 | src.etl.ingest | INFO | SAVED: C:\Users\razin\Projects\olist-360\data\processed\sellers_processed.csv
+2026-03-25 01:36:37,970 | src.etl.ingest | INFO | SAVED: C:\Users\razin\Projects\olist-360\data\processed\products_processed.csv
+2026-03-25 01:36:38,136 | src.etl.ingest | INFO | SAVED: C:\Users\razin\Projects\olist-360\data\processed\payments_processed.csv
+2026-03-25 01:36:38,643 | src.etl.ingest | INFO | SAVED: C:\Users\razin\Projects\olist-360\data\processed\reviews_processed.csv
+2026-03-25 01:36:41,084 | src.etl.ingest | INFO | SAVED: C:\Users\razin\Projects\olist-360\data\processed\geolocation_processed.csv
+2026-03-25 01:36:41,085 | src.etl.ingest | INFO | SAVED: C:\Users\razin\Projects\olist-360\data\processed\category_translation_processed.csv
+2026-03-25 01:36:41,086 | src.etl.ingest | INFO | PIPELINE COMPLETE — 9 tables ingested and saved
+2026-03-25 01:36:41,130 | pipeline_runner | INFO | STEP 1 — Ingestion done
+2026-03-25 01:36:41,130 | pipeline_runner | INFO | STEP 2 — Transform starting...
+2026-03-25 01:36:41,316 | src.etl.transform | INFO | STARTING WAREHOUSE BUILD...
+2026-03-25 01:36:41,347 | src.etl.transform | INFO | CONNECTED TO WAREHOUSE: C:\Users\razin\Projects\olist-360\data\warehouse\olist.duckdb
+2026-03-25 01:36:41,690 | src.etl.transform | INFO | LOADED orders_processed.csv
+2026-03-25 01:36:42,044 | src.etl.transform | INFO | LOADED order_items_processed.csv
+2026-03-25 01:36:42,198 | src.etl.transform | INFO | LOADED customers_processed.csv
+2026-03-25 01:36:42,203 | src.etl.transform | INFO | LOADED sellers_processed.csv
+2026-03-25 01:36:42,251 | src.etl.transform | INFO | LOADED products_processed.csv
+2026-03-25 01:36:42,349 | src.etl.transform | INFO | LOADED payments_processed.csv
+2026-03-25 01:36:42,700 | src.etl.transform | INFO | LOADED reviews_processed.csv
+2026-03-25 01:36:43,332 | src.etl.transform | INFO | LOADED geolocation_processed.csv
+2026-03-25 01:36:43,334 | src.etl.transform | INFO | LOADED category_translation_processed.csv
+2026-03-25 01:36:43,493 | src.etl.transform | INFO | dim_customer CREATED — 99441 rows
+2026-03-25 01:36:43,505 | src.etl.transform | INFO | dim_seller CREATED — 3095 rows
+2026-03-25 01:36:43,562 | src.etl.transform | INFO | dim_product CREATED — 32951 rows
+2026-03-25 01:36:44,468 | src.etl.transform | INFO | dim_date CREATED — 98875 rows
+2026-03-25 01:36:44,576 | src.etl.transform | INFO | dim_payment CREATED — 103272 rows
+2026-03-25 01:36:44,753 | src.etl.transform | INFO | dim_geolocation CREATED — 19023 rows
+2026-03-25 01:36:45,690 | src.etl.transform | INFO | fact_orders CREATED — 99441 rows
+2026-03-25 01:36:45,715 | src.etl.transform | INFO | WAREHOUSE TABLES: ['dim_customer', 'dim_date', 'dim_geolocation', 'dim_payment', 'dim_product', 'dim_seller', 'fact_orders', 'monitoring_log']
+2026-03-25 01:36:45,739 | src.etl.transform | INFO | WAREHOUSE BUILD COMPLETE
+2026-03-25 01:36:45,810 | pipeline_runner | INFO | STEP 2 — Transform done
+2026-03-25 01:36:45,820 | pipeline_runner | INFO | STEP 3 — Validation starting...
+2026-03-25 01:36:45,828 | src.etl.validate | INFO | ==================================================
+2026-03-25 01:36:45,829 | src.etl.validate | INFO | STARTING DATA VALIDATION PIPELINE
+2026-03-25 01:36:45,830 | src.etl.validate | INFO | ==================================================
+2026-03-25 01:36:45,853 | src.etl.validate | INFO | CONNECTED TO WAREHOUSE
+2026-03-25 01:36:45,855 | src.etl.validate | INFO | RUNNING NULL CHECKS...
+2026-03-25 01:36:45,868 | src.etl.validate | INFO | NULL CHECK PASSED | fact_orders.order_id
+2026-03-25 01:36:45,870 | src.etl.validate | INFO | NULL CHECK PASSED | fact_orders.customer_id
+2026-03-25 01:36:45,870 | src.etl.validate | INFO | NULL CHECK PASSED | fact_orders.order_status
+2026-03-25 01:36:45,871 | src.etl.validate | INFO | NULL CHECK PASSED | dim_customer.customer_id
+2026-03-25 01:36:45,872 | src.etl.validate | INFO | NULL CHECK PASSED | dim_customer.customer_state
+2026-03-25 01:36:45,873 | src.etl.validate | INFO | NULL CHECK PASSED | dim_seller.seller_id
+2026-03-25 01:36:45,874 | src.etl.validate | INFO | NULL CHECK PASSED | dim_seller.seller_state
+2026-03-25 01:36:45,876 | src.etl.validate | INFO | NULL CHECK PASSED | dim_product.product_id
+2026-03-25 01:36:45,877 | src.etl.validate | INFO | NULL CHECK PASSED | dim_payment.order_id
+2026-03-25 01:36:45,879 | src.etl.validate | INFO | NULL CHECK PASSED | dim_payment.payment_type
+2026-03-25 01:36:45,880 | src.etl.validate | INFO | NULL CHECK PASSED | dim_payment.payment_value
+2026-03-25 01:36:45,880 | src.etl.validate | INFO | RUNNING DUPLICATE CHECKS...
+2026-03-25 01:36:45,910 | src.etl.validate | INFO | DUPLICATE CHECK PASSED | fact_orders.order_id
+2026-03-25 01:36:45,935 | src.etl.validate | INFO | DUPLICATE CHECK PASSED | dim_customer.customer_id
+2026-03-25 01:36:45,939 | src.etl.validate | INFO | DUPLICATE CHECK PASSED | dim_seller.seller_id
+2026-03-25 01:36:45,951 | src.etl.validate | INFO | DUPLICATE CHECK PASSED | dim_product.product_id
+2026-03-25 01:36:45,951 | src.etl.validate | INFO | RUNNING REFERENTIAL INTEGRITY CHECKS...
+2026-03-25 01:36:45,987 | src.etl.validate | INFO | INTEGRITY CHECK PASSED | fact_orders.customer_id -> dim_customer.customer_id
+2026-03-25 01:36:45,999 | src.etl.validate | INFO | INTEGRITY CHECK PASSED | fact_orders.seller_id -> dim_seller.seller_id
+2026-03-25 01:36:46,025 | src.etl.validate | INFO | INTEGRITY CHECK PASSED | fact_orders.product_id -> dim_product.product_id
+2026-03-25 01:36:46,026 | src.etl.validate | INFO | RUNNING BUSINESS RULE CHECKS...
+2026-03-25 01:36:46,029 | src.etl.validate | INFO | BUSINESS RULE PASSED | Negative prices
+2026-03-25 01:36:46,030 | src.etl.validate | INFO | BUSINESS RULE PASSED | Zero or negative freight
+2026-03-25 01:36:46,034 | src.etl.validate | INFO | BUSINESS RULE PASSED | Delivery before purchase
+2026-03-25 01:36:46,036 | src.etl.validate | INFO | BUSINESS RULE PASSED | Invalid review scores
+2026-03-25 01:36:46,037 | src.etl.validate | INFO | ==================================================
+2026-03-25 01:36:46,037 | src.etl.validate | INFO | VALIDATION SUMMARY
+2026-03-25 01:36:46,037 | src.etl.validate | INFO | ==================================================
+2026-03-25 01:36:46,038 | src.etl.validate | INFO | Total checks run : 13
+2026-03-25 01:36:46,038 | src.etl.validate | INFO | Checks passed    : 13
+2026-03-25 01:36:46,038 | src.etl.validate | INFO | Checks failed    : 0
+2026-03-25 01:36:46,039 | src.etl.validate | INFO | DATA QUALITY SCORE : 100.0%
+2026-03-25 01:36:46,039 | src.etl.validate | INFO | ALL CHECKS PASSED — DATA IS CLEAN
+2026-03-25 01:36:46,039 | src.etl.validate | INFO | ==================================================
+2026-03-25 01:36:46,046 | pipeline_runner | INFO | STEP 3 — Validation done | Score: 100.0%
+2026-03-25 01:36:46,046 | pipeline_runner | INFO | STEP 4 — Monitoring starting...
+2026-03-25 01:36:46,051 | src.ops.monitor | INFO |  STARTING DAILY MONITORING
+2026-03-25 01:36:46,070 | src.ops.monitor | INFO | Total orders: 99,441
+2026-03-25 01:36:46,076 | src.ops.monitor | INFO | Today's orders: 0
+2026-03-25 01:36:46,076 | src.ops.monitor | INFO | Yesterday's orders: 0
+2026-03-25 01:36:46,080 | src.ops.monitor | INFO | Late delivery rate: 7.87%
+2026-03-25 01:36:46,082 | src.ops.monitor | INFO | Null reviews: 768 (0.77%)
+2026-03-25 01:36:46,082 | src.ops.monitor | INFO | Data Quality Score: 100/100
+2026-03-25 01:36:46,086 | src.ops.monitor | INFO |  ALL CHECKS PASSED — System healthy
+2026-03-25 01:36:46,098 | src.ops.monitor | INFO |  MONITORING COMPLETE
+2026-03-25 01:36:46,098 | pipeline_runner | INFO | STEP 4 — Monitoring done
+2026-03-25 01:36:46,099 | pipeline_runner | INFO | =======================================================
+2026-03-25 01:36:46,099 | pipeline_runner | INFO | PIPELINE SUMMARY
+2026-03-25 01:36:46,099 | pipeline_runner | INFO | =======================================================
+2026-03-25 01:36:46,099 | pipeline_runner | INFO |   Ingestion            PASSED
+2026-03-25 01:36:46,099 | pipeline_runner | INFO |   Transform            PASSED
+2026-03-25 01:36:46,100 | pipeline_runner | INFO |   Validation           PASSED (100.0%)
+2026-03-25 01:36:46,100 | pipeline_runner | INFO |   Monitoring           PASSED
+2026-03-25 01:36:46,100 | pipeline_runner | INFO |   Duration        : 13 seconds
+2026-03-25 01:36:46,100 | pipeline_runner | INFO |   Steps passed    : 4/4
+2026-03-25 01:36:46,100 | pipeline_runner | INFO | =======================================================

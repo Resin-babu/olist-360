@@ -79,3 +79,42 @@
 2026-03-24 01:04:04,775 | __main__ | INFO | DATA QUALITY SCORE : 100.0%
 2026-03-24 01:04:04,775 | __main__ | INFO | ALL CHECKS PASSED — DATA IS CLEAN
 2026-03-24 01:04:04,775 | __main__ | INFO | ==================================================
+2026-03-25 01:36:45,828 | src.etl.validate | INFO | ==================================================
+2026-03-25 01:36:45,829 | src.etl.validate | INFO | STARTING DATA VALIDATION PIPELINE
+2026-03-25 01:36:45,830 | src.etl.validate | INFO | ==================================================
+2026-03-25 01:36:45,853 | src.etl.validate | INFO | CONNECTED TO WAREHOUSE
+2026-03-25 01:36:45,855 | src.etl.validate | INFO | RUNNING NULL CHECKS...
+2026-03-25 01:36:45,868 | src.etl.validate | INFO | NULL CHECK PASSED | fact_orders.order_id
+2026-03-25 01:36:45,870 | src.etl.validate | INFO | NULL CHECK PASSED | fact_orders.customer_id
+2026-03-25 01:36:45,870 | src.etl.validate | INFO | NULL CHECK PASSED | fact_orders.order_status
+2026-03-25 01:36:45,871 | src.etl.validate | INFO | NULL CHECK PASSED | dim_customer.customer_id
+2026-03-25 01:36:45,872 | src.etl.validate | INFO | NULL CHECK PASSED | dim_customer.customer_state
+2026-03-25 01:36:45,873 | src.etl.validate | INFO | NULL CHECK PASSED | dim_seller.seller_id
+2026-03-25 01:36:45,874 | src.etl.validate | INFO | NULL CHECK PASSED | dim_seller.seller_state
+2026-03-25 01:36:45,876 | src.etl.validate | INFO | NULL CHECK PASSED | dim_product.product_id
+2026-03-25 01:36:45,877 | src.etl.validate | INFO | NULL CHECK PASSED | dim_payment.order_id
+2026-03-25 01:36:45,879 | src.etl.validate | INFO | NULL CHECK PASSED | dim_payment.payment_type
+2026-03-25 01:36:45,880 | src.etl.validate | INFO | NULL CHECK PASSED | dim_payment.payment_value
+2026-03-25 01:36:45,880 | src.etl.validate | INFO | RUNNING DUPLICATE CHECKS...
+2026-03-25 01:36:45,910 | src.etl.validate | INFO | DUPLICATE CHECK PASSED | fact_orders.order_id
+2026-03-25 01:36:45,935 | src.etl.validate | INFO | DUPLICATE CHECK PASSED | dim_customer.customer_id
+2026-03-25 01:36:45,939 | src.etl.validate | INFO | DUPLICATE CHECK PASSED | dim_seller.seller_id
+2026-03-25 01:36:45,951 | src.etl.validate | INFO | DUPLICATE CHECK PASSED | dim_product.product_id
+2026-03-25 01:36:45,951 | src.etl.validate | INFO | RUNNING REFERENTIAL INTEGRITY CHECKS...
+2026-03-25 01:36:45,987 | src.etl.validate | INFO | INTEGRITY CHECK PASSED | fact_orders.customer_id -> dim_customer.customer_id
+2026-03-25 01:36:45,999 | src.etl.validate | INFO | INTEGRITY CHECK PASSED | fact_orders.seller_id -> dim_seller.seller_id
+2026-03-25 01:36:46,025 | src.etl.validate | INFO | INTEGRITY CHECK PASSED | fact_orders.product_id -> dim_product.product_id
+2026-03-25 01:36:46,026 | src.etl.validate | INFO | RUNNING BUSINESS RULE CHECKS...
+2026-03-25 01:36:46,029 | src.etl.validate | INFO | BUSINESS RULE PASSED | Negative prices
+2026-03-25 01:36:46,030 | src.etl.validate | INFO | BUSINESS RULE PASSED | Zero or negative freight
+2026-03-25 01:36:46,034 | src.etl.validate | INFO | BUSINESS RULE PASSED | Delivery before purchase
+2026-03-25 01:36:46,036 | src.etl.validate | INFO | BUSINESS RULE PASSED | Invalid review scores
+2026-03-25 01:36:46,037 | src.etl.validate | INFO | ==================================================
+2026-03-25 01:36:46,037 | src.etl.validate | INFO | VALIDATION SUMMARY
+2026-03-25 01:36:46,037 | src.etl.validate | INFO | ==================================================
+2026-03-25 01:36:46,038 | src.etl.validate | INFO | Total checks run : 13
+2026-03-25 01:36:46,038 | src.etl.validate | INFO | Checks passed    : 13
+2026-03-25 01:36:46,038 | src.etl.validate | INFO | Checks failed    : 0
+2026-03-25 01:36:46,039 | src.etl.validate | INFO | DATA QUALITY SCORE : 100.0%
+2026-03-25 01:36:46,039 | src.etl.validate | INFO | ALL CHECKS PASSED — DATA IS CLEAN
+2026-03-25 01:36:46,039 | src.etl.validate | INFO | ==================================================

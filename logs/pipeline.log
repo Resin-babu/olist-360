@@ -47,3 +47,81 @@
 2026-03-24 10:14:45,846 | __main__ | INFO | fact_orders CREATED — 99441 rows
 2026-03-24 10:14:45,868 | __main__ | INFO | WAREHOUSE TABLES: ['dim_customer', 'dim_date', 'dim_geolocation', 'dim_payment', 'dim_product', 'dim_seller', 'fact_orders']
 2026-03-24 10:14:45,877 | __main__ | INFO | WAREHOUSE BUILD COMPLETE
+2026-03-25 01:35:29,719 | src.etl.ingest | INFO | STARTING FULL INGESTION PIPELINE...
+2026-03-25 01:35:30,389 | src.etl.ingest | INFO | INGESTION COMPLETED olist_orders_dataset.csv | ROWS: 99441 | COLS: 8
+2026-03-25 01:35:30,634 | src.etl.ingest | INFO | ORDERS INGESTION COMPLETED
+2026-03-25 01:35:31,008 | src.etl.ingest | INFO | INGESTION COMPLETED olist_order_items_dataset.csv | ROWS: 112650 | COLS: 7
+2026-03-25 01:35:31,042 | src.etl.ingest | INFO | ORDER ITEMS INGESTION COMPLETED
+2026-03-25 01:35:31,177 | src.etl.ingest | INFO | INGESTION COMPLETED olist_customers_dataset.csv | ROWS: 99441 | COLS: 5
+2026-03-25 01:35:31,178 | src.etl.ingest | INFO | CUSTOMERS INGESTION COMPLETED
+2026-03-25 01:35:31,184 | src.etl.ingest | INFO | INGESTION COMPLETED olist_sellers_dataset.csv | ROWS: 3095 | COLS: 4
+2026-03-25 01:35:31,185 | src.etl.ingest | INFO | SELLERS INGESTION COMPLETED
+2026-03-25 01:35:31,223 | src.etl.ingest | INFO | INGESTION COMPLETED olist_products_dataset.csv | ROWS: 32951 | COLS: 9
+2026-03-25 01:35:31,225 | src.etl.ingest | INFO | PRODUCTS INGESTION COMPLETED
+2026-03-25 01:35:31,307 | src.etl.ingest | INFO | INGESTION COMPLETED olist_order_payments_dataset.csv | ROWS: 103886 | COLS: 5
+2026-03-25 01:35:31,309 | src.etl.ingest | INFO | PAYMENTS INGESTION COMPLETED
+2026-03-25 01:35:31,609 | src.etl.ingest | INFO | INGESTION COMPLETED olist_order_reviews_dataset.csv | ROWS: 99224 | COLS: 7
+2026-03-25 01:35:31,646 | src.etl.ingest | INFO | REVIEWS INGESTION COMPLETED
+2026-03-25 01:35:32,117 | src.etl.ingest | INFO | INGESTION COMPLETED olist_geolocation_dataset.csv | ROWS: 1000163 | COLS: 5
+2026-03-25 01:35:32,124 | src.etl.ingest | INFO | GEOLOCATION INGESTION COMPLETED
+2026-03-25 01:35:32,128 | src.etl.ingest | INFO | INGESTION COMPLETED product_category_name_translation.csv | ROWS: 71 | COLS: 2
+2026-03-25 01:35:32,129 | src.etl.ingest | INFO | CATEGORY TRANSLATION INGESTION COMPLETED
+2026-03-25 01:35:32,762 | src.etl.ingest | INFO | SAVED: C:\Users\razin\Projects\olist-360\data\processed\orders_processed.csv
+2026-03-25 01:35:33,178 | src.etl.ingest | INFO | SAVED: C:\Users\razin\Projects\olist-360\data\processed\order_items_processed.csv
+2026-03-25 01:35:33,327 | src.etl.ingest | INFO | SAVED: C:\Users\razin\Projects\olist-360\data\processed\customers_processed.csv
+2026-03-25 01:35:33,332 | src.etl.ingest | INFO | SAVED: C:\Users\razin\Projects\olist-360\data\processed\sellers_processed.csv
+2026-03-25 01:35:33,452 | src.etl.ingest | INFO | SAVED: C:\Users\razin\Projects\olist-360\data\processed\products_processed.csv
+2026-03-25 01:35:33,602 | src.etl.ingest | INFO | SAVED: C:\Users\razin\Projects\olist-360\data\processed\payments_processed.csv
+2026-03-25 01:35:34,015 | src.etl.ingest | INFO | SAVED: C:\Users\razin\Projects\olist-360\data\processed\reviews_processed.csv
+2026-03-25 01:35:36,109 | src.etl.ingest | INFO | SAVED: C:\Users\razin\Projects\olist-360\data\processed\geolocation_processed.csv
+2026-03-25 01:35:36,111 | src.etl.ingest | INFO | SAVED: C:\Users\razin\Projects\olist-360\data\processed\category_translation_processed.csv
+2026-03-25 01:35:36,111 | src.etl.ingest | INFO | PIPELINE COMPLETE — 9 tables ingested and saved
+2026-03-25 01:36:33,718 | src.etl.ingest | INFO | STARTING FULL INGESTION PIPELINE...
+2026-03-25 01:36:34,213 | src.etl.ingest | INFO | INGESTION COMPLETED olist_orders_dataset.csv | ROWS: 99441 | COLS: 8
+2026-03-25 01:36:34,427 | src.etl.ingest | INFO | ORDERS INGESTION COMPLETED
+2026-03-25 01:36:34,757 | src.etl.ingest | INFO | INGESTION COMPLETED olist_order_items_dataset.csv | ROWS: 112650 | COLS: 7
+2026-03-25 01:36:34,809 | src.etl.ingest | INFO | ORDER ITEMS INGESTION COMPLETED
+2026-03-25 01:36:34,994 | src.etl.ingest | INFO | INGESTION COMPLETED olist_customers_dataset.csv | ROWS: 99441 | COLS: 5
+2026-03-25 01:36:34,995 | src.etl.ingest | INFO | CUSTOMERS INGESTION COMPLETED
+2026-03-25 01:36:35,002 | src.etl.ingest | INFO | INGESTION COMPLETED olist_sellers_dataset.csv | ROWS: 3095 | COLS: 4
+2026-03-25 01:36:35,003 | src.etl.ingest | INFO | SELLERS INGESTION COMPLETED
+2026-03-25 01:36:35,057 | src.etl.ingest | INFO | INGESTION COMPLETED olist_products_dataset.csv | ROWS: 32951 | COLS: 9
+2026-03-25 01:36:35,061 | src.etl.ingest | INFO | PRODUCTS INGESTION COMPLETED
+2026-03-25 01:36:35,176 | src.etl.ingest | INFO | INGESTION COMPLETED olist_order_payments_dataset.csv | ROWS: 103886 | COLS: 5
+2026-03-25 01:36:35,179 | src.etl.ingest | INFO | PAYMENTS INGESTION COMPLETED
+2026-03-25 01:36:35,601 | src.etl.ingest | INFO | INGESTION COMPLETED olist_order_reviews_dataset.csv | ROWS: 99224 | COLS: 7
+2026-03-25 01:36:35,657 | src.etl.ingest | INFO | REVIEWS INGESTION COMPLETED
+2026-03-25 01:36:36,349 | src.etl.ingest | INFO | INGESTION COMPLETED olist_geolocation_dataset.csv | ROWS: 1000163 | COLS: 5
+2026-03-25 01:36:36,359 | src.etl.ingest | INFO | GEOLOCATION INGESTION COMPLETED
+2026-03-25 01:36:36,363 | src.etl.ingest | INFO | INGESTION COMPLETED product_category_name_translation.csv | ROWS: 71 | COLS: 2
+2026-03-25 01:36:36,365 | src.etl.ingest | INFO | CATEGORY TRANSLATION INGESTION COMPLETED
+2026-03-25 01:36:37,094 | src.etl.ingest | INFO | SAVED: C:\Users\razin\Projects\olist-360\data\processed\orders_processed.csv
+2026-03-25 01:36:37,607 | src.etl.ingest | INFO | SAVED: C:\Users\razin\Projects\olist-360\data\processed\order_items_processed.csv
+2026-03-25 01:36:37,824 | src.etl.ingest | INFO | SAVED: C:\Users\razin\Projects\olist-360\data\processed\customers_processed.csv
+2026-03-25 01:36:37,830 | src.etl.ingest | INFO | SAVED: C:\Users\razin\Projects\olist-360\data\processed\sellers_processed.csv
+2026-03-25 01:36:37,970 | src.etl.ingest | INFO | SAVED: C:\Users\razin\Projects\olist-360\data\processed\products_processed.csv
+2026-03-25 01:36:38,136 | src.etl.ingest | INFO | SAVED: C:\Users\razin\Projects\olist-360\data\processed\payments_processed.csv
+2026-03-25 01:36:38,643 | src.etl.ingest | INFO | SAVED: C:\Users\razin\Projects\olist-360\data\processed\reviews_processed.csv
+2026-03-25 01:36:41,084 | src.etl.ingest | INFO | SAVED: C:\Users\razin\Projects\olist-360\data\processed\geolocation_processed.csv
+2026-03-25 01:36:41,085 | src.etl.ingest | INFO | SAVED: C:\Users\razin\Projects\olist-360\data\processed\category_translation_processed.csv
+2026-03-25 01:36:41,086 | src.etl.ingest | INFO | PIPELINE COMPLETE — 9 tables ingested and saved
+2026-03-25 01:36:41,316 | src.etl.transform | INFO | STARTING WAREHOUSE BUILD...
+2026-03-25 01:36:41,347 | src.etl.transform | INFO | CONNECTED TO WAREHOUSE: C:\Users\razin\Projects\olist-360\data\warehouse\olist.duckdb
+2026-03-25 01:36:41,690 | src.etl.transform | INFO | LOADED orders_processed.csv
+2026-03-25 01:36:42,044 | src.etl.transform | INFO | LOADED order_items_processed.csv
+2026-03-25 01:36:42,198 | src.etl.transform | INFO | LOADED customers_processed.csv
+2026-03-25 01:36:42,203 | src.etl.transform | INFO | LOADED sellers_processed.csv
+2026-03-25 01:36:42,251 | src.etl.transform | INFO | LOADED products_processed.csv
+2026-03-25 01:36:42,349 | src.etl.transform | INFO | LOADED payments_processed.csv
+2026-03-25 01:36:42,700 | src.etl.transform | INFO | LOADED reviews_processed.csv
+2026-03-25 01:36:43,332 | src.etl.transform | INFO | LOADED geolocation_processed.csv
+2026-03-25 01:36:43,334 | src.etl.transform | INFO | LOADED category_translation_processed.csv
+2026-03-25 01:36:43,493 | src.etl.transform | INFO | dim_customer CREATED — 99441 rows
+2026-03-25 01:36:43,505 | src.etl.transform | INFO | dim_seller CREATED — 3095 rows
+2026-03-25 01:36:43,562 | src.etl.transform | INFO | dim_product CREATED — 32951 rows
+2026-03-25 01:36:44,468 | src.etl.transform | INFO | dim_date CREATED — 98875 rows
+2026-03-25 01:36:44,576 | src.etl.transform | INFO | dim_payment CREATED — 103272 rows
+2026-03-25 01:36:44,753 | src.etl.transform | INFO | dim_geolocation CREATED — 19023 rows
+2026-03-25 01:36:45,690 | src.etl.transform | INFO | fact_orders CREATED — 99441 rows
+2026-03-25 01:36:45,715 | src.etl.transform | INFO | WAREHOUSE TABLES: ['dim_customer', 'dim_date', 'dim_geolocation', 'dim_payment', 'dim_product', 'dim_seller', 'fact_orders', 'monitoring_log']
+2026-03-25 01:36:45,739 | src.etl.transform | INFO | WAREHOUSE BUILD COMPLETE

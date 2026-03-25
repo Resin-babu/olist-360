@@ -1,0 +1,4 @@
+2026-03-25 10:53:24,691 | __main__ | INFO | GENERATING WEEKLY KPI REPORT...
+2026-03-25 10:53:24,828 | __main__ | INFO | KPIs fetched successfully
+2026-03-25 10:53:24,841 | __main__ | INFO | REPORT SAVED: C:\Users\razin\Projects\olist-360\reports\weekly_kpi_report.html
+2026-03-25 10:53:24,842 | __main__ | INFO | Open reports/weekly_kpi_report.html in your browser to view it

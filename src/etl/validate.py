@@ -250,7 +250,12 @@ def run_all():
     )
 
     # Total checks run
-    total_checks = 13
+    total_checks = (
+    len(null_failures) +
+    len(duplicate_failures) +
+    len(integrity_failures) +
+    len(rule_failures)
+)
 
     # Calculate score
     score = calculate_quality_score(all_failures, total_checks)
